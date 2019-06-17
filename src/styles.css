@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+	background: url('http://getwallpapers.com/wallpaper/full/a/9/2/450149.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}

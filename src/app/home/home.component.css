@@ -1,0 +1,19 @@
+.col-center{
+  float: none;
+  margin: 23em auto;
+}
+ .row{
+ 	position: relative;
+ 	top: 50%;
+ }
+
+.Botones{
+  float: none;
+  margin: 0 auto;
+}
+
+.fon{
+	background: url('http://getwallpapers.com/wallpaper/full/e/e/c/1016523-large-lion-wallpaper-1920x1080-for-mac.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
