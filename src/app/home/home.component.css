@@ -13,3 +13,12 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+.size{
+  width: 3em;
+}
+
+.ubicacion{
+  text-align:center;
+  margin: 1em 0em;
+}

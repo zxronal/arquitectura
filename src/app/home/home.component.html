@@ -1,20 +1,4 @@
-<!-- \<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Lion</h5>
-    <div class="input-group mb-3">
-	  <div class="input-group-prepend">
-	    <span class="input-group-text" id="basic-addon3">IP</span>
-	  </div>
-	  <input type="text" class="form-control" aria-describedby="basic-addon3" [(ngModel)]="ip" disabled>
-  	</div>  
-	<div class="card-footer">
-      <button (click)="sendAction('stop')">Parar</button>
-	  <button (click)="sendAction('forward')"> Adelante</button>
-	  <button (click)="sendAction('aback')"> Atras</button>
-    </div>
-  </div>
-</div> -->
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-7 col-sm-7 col-center">
@@ -43,27 +27,37 @@
 						  </div>
 						  <input type="text" class="form-control" aria-describedby="basic-addon3" [(ngModel)]="ip" >
 					  	</div>						  	
-		  					<div style="text-align:center">
-		  						<button (click)="sendAction('forward')" title="Adelante"> 
-								<img src="https://img.icons8.com/cotton/50/000000/circled-chevron-right.png">
-		  					</button>
-		  					<button (click)="sendAction('stop')" title="Parar">
-						  		<img src="https://img.icons8.com/cotton/50/000000/circled-pause.png">
-						  	</button>
-		  					<button (click)="sendAction('aback')" title="Atras"> 
-							    <img src="https://img.icons8.com/cotton/50/000000/circled-chevron-left.png">
-		  					</button>
-
-                  <button (click)="movHead('0')" title="Pruebaa">
-                    <img src="">
-                    A cero grados
-                  </button>
-                  <button (click)="movHead('90')" title="Pruebab">
-                    A noventa grados
-                  </button><button (click)="movHead('180')" title="Pruebab">
-                    A 180 grados
-                  </button>
-		  					</div>	  				
+		  					<div class="row">
+								<div  class="col-md-6 col-sm-6 col-xs-6 ubicacion">
+										<h3>Movimiento</h3>
+									<button (click)="sendAction('aback')" title="Atras"> 
+										<img src="https://image.flaticon.com/icons/svg/427/427589.svg" class="size">
+									</button>
+									<button (click)="sendAction('stop')" title="Parar">
+										<img src="https://image.flaticon.com/icons/svg/1757/1757017.svg" class="size">
+									</button>
+									<button (click)="sendAction('forward')" title="Adelante"> 
+										<img src="https://image.flaticon.com/icons/svg/1934/1934666.svg" class="size"> 
+									</button>
+								</div>
+								<div  class="col-md-6 col-sm-6 col-xs-6 ubicacion">
+									<h3>Cabeza</h3>
+									<button (click)="movHead('0')" title="A cero grados">
+										<img src="https://image.flaticon.com/icons/svg/126/126492.svg" class="size">								
+									</button>
+									<button (click)="movHead('90')" title="A noventa grados">			
+										<img src="https://image.flaticon.com/icons/svg/149/149116.svg" class="size">	
+									</button>
+									<button (click)="movHead('180')" title="A 180 grados">
+										<img src="https://image.flaticon.com/icons/svg/126/126490.svg" class="size">	
+									</button>
+								</div>
+								<div class="col-md-12 col-sm-12 col-xs-12 ubicacion"> 
+									<button  title="Sonido">
+										<img src="https://image.flaticon.com/icons/svg/149/149140.svg" class="size">								
+									</button>									
+								</div>	  	  
+							</div>  				
 				      </div>				     
 				    </div>
 				</div>
