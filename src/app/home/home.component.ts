@@ -17,4 +17,8 @@ export class HomeComponent implements OnInit {
   sendAction(action: string) {
     this.dataService.actionToDo(action, this.ip);
   }
+
+  movHead(angle: string) {
+    this.dataService.movHead(angle, this.ip);
+  }
 }
