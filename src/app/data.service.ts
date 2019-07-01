@@ -42,4 +42,21 @@ export class DataService {
     this.httpClient.post(url, body.toString(), httpOptions ).
     subscribe((res: Response) => console.log(res));
   }
+
+  playSound(ip: string) {
+    // 0
+    // 90
+    // 180
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/x-www-form-urlencoded',
+      })
+    };
+    const body = new HttpParams()
+      .set('action', 'play');
+    // 192.168.1.70
+    const url = 'http://' + ip + ':8080/play_sound';
+    this.httpClient.post(url, body.toString(), httpOptions ).
+    subscribe((res: Response) => console.log(res));
+  }
 }

@@ -21,4 +21,8 @@ export class HomeComponent implements OnInit {
   movHead(angle: string) {
     this.dataService.movHead(angle, this.ip);
   }
+
+  playSound() {
+    this.dataService.playSound(this.ip);
+  }
 }
