@@ -13,50 +13,34 @@ export class DataService {
     // stop
     // spinforward
     // spinaback
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type':  'application/x-www-form-urlencoded',
-      })
-    };
     const body = new HttpParams()
       .set('action', action);
-    // 192.168.1.70
     const url = 'http://' + ip + ':8080/action';
-    this.httpClient.post(url, body.toString(), httpOptions ).
-    subscribe((res: Response) => console.log(res));
+    return this.httpClient.post(url, body.toString(), {responseType: 'text'} );
   }
 
   movHead(angle: string, ip: string) {
     // 0
     // 90
     // 180
+    /*
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type':  'application/x-www-form-urlencoded',
-      })
-    };
+      }),
+      responseType: 'text',
+    };*/
     const body = new HttpParams()
       .set('angle', angle);
     // 192.168.1.70
     const url = 'http://' + ip + ':8080/mov_head';
-    this.httpClient.post(url, body.toString(), httpOptions ).
-    subscribe((res: Response) => console.log(res));
+    return this.httpClient.post(url, body.toString(), {responseType: 'text'} );
   }
 
   playSound(ip: string) {
-    // 0
-    // 90
-    // 180
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type':  'application/x-www-form-urlencoded',
-      })
-    };
     const body = new HttpParams()
       .set('action', 'play');
-    // 192.168.1.70
     const url = 'http://' + ip + ':8080/play_sound';
-    this.httpClient.post(url, body.toString(), httpOptions ).
-    subscribe((res: Response) => console.log(res));
+    return this.httpClient.post(url, body.toString(), {responseType: 'text'} );
   }
 }

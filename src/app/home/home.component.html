@@ -30,28 +30,28 @@
 		  					<div class="row">
 								<div  class="col-md-6 col-sm-6 col-xs-6 ubicacion">
 										<h3>Movimiento</h3>
-									<button (click)="sendAction('aback')" title="Atras"> 
+									<button [disabled]="disabled" (click)="sendAction('aback')" title="Atras">
 										<img src="https://image.flaticon.com/icons/svg/427/427589.svg" class="size">
 									</button>
-									<button (click)="sendAction('stop')" title="Parar">
+									<button [disabled]="disabled" (click)="sendAction('stop')" title="Parar">
 										<img src="https://image.flaticon.com/icons/svg/1757/1757017.svg" class="size">
 									</button>
 								
 								</div>
 								<div  class="col-md-6 col-sm-6 col-xs-6 ubicacion">
 									<h3>Cabeza</h3>
-									<button (click)="movHead('0')" title="A cero grados">
+									<button [disabled]="disabled" (click)="movHead('0')" title="A cero grados">
 										<img src="https://image.flaticon.com/icons/svg/126/126492.svg" class="size">								
 									</button>
-									<button (click)="movHead('90')" title="A noventa grados">			
+									<button [disabled]="disabled" (click)="movHead('90')" title="A noventa grados">
 										<img src="https://image.flaticon.com/icons/svg/149/149116.svg" class="size">	
 									</button>
-									<button (click)="movHead('180')" title="A 180 grados">
+									<button [disabled]="disabled" (click)="movHead('180')" title="A 180 grados">
 										<img src="https://image.flaticon.com/icons/svg/126/126490.svg" class="size">	
 									</button>
 								</div>
 								<div class="col-md-12 col-sm-12 col-xs-12 ubicacion"> 
-									<button  title="Sonido" (click)="playSound()">
+									<button  [disabled]="disabled" title="Sonido" (click)="playSound()">
 										<img src="https://image.flaticon.com/icons/svg/149/149140.svg" class="size">								
 									</button>									
 								</div>	  	  
